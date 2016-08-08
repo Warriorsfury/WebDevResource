@@ -1,0 +1,56 @@
+@import 'tools/mixins';
+@import 'https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz';
+
+* {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#header {
+  display: flex;
+  padding: 5px;
+  width: inherit;
+  justify-content: space-around;
+  background-color: #d3d3d3;
+  img {
+    border: 1px solid black;
+  }
+  #navigation {
+    display: flex;
+    align-items: center;
+    width: 550px;
+    ul {
+      display: inherit;
+      flex-direction: row;
+      align-items: center;
+      width: 550px;
+      margin-top: 10px;
+      justify-content: space-around;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        transition: color 0.5s;
+      }
+      a:hover {
+        color: green;
+      }
+    }
+  }
+}
+
+#welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 750px;
+  .nodisplay {
+  display: none;
+  }
+  .button {
+      background:grey;
+      padding:10px 20px;
+      width:100px;
+      text-align:center;
+      margin:20px 0;
+  }
+}
